@@ -1,0 +1,70 @@
+
+.table-one{
+    justify-content: center ;
+    gap: 55px;
+    background-color: #efefef;
+    display: flex;
+}
+
+.li-one{
+    background: var(--accent, #F13C6E);
+    float: left;
+    width: 580px;
+    height: 212px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.li-two{
+    float:right ;
+    background: var(--accent, #F13C6E);
+    width: 580px;
+    height: 212px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.li-one{
+    display: block;
+
+}
+
+.nameblock-one{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    padding: 50px 250px 25px 50px
+}
+
+.nameblock-two{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.625%; 
+    text-align: left;
+    /* padding: 45px; */
+    color: #FFF;
+    margin-left: 9%;
+}
+
+.label-one{
+    border-radius: 30px;
+    width: 225px;
+    height: 35px;
+    flex-shrink: 0;
+    background: #FFF;
+    margin-left: 9%;
+    border: 0px;
+    margin-top: 25px;
+}
+
+.logomail{
+    background-image: url(/lesson07/img/mail.svg);
+    width: 140px;
+    height: 140px;
+
+    margin-bottom: 80%;
+    /* padding: 40px; */
+}

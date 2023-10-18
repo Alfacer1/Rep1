@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Roboto:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "Neue Machina";
+  src: url(./fonts/NeueMachina-Medium.ttf);
+}
+@font-face {
+  font-family: Steppe;
+  src: url(./fonts/Steppe-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+b {
+  font-family: Manrope;
+  letter-spacing: 0.07em;
+}
+
+.lol {
+  position: fixed;
+}
+.lol .colee {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  padding-bottom: 150px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+}
+.header .div_logo {
+  padding-top: 25px;
+  padding-right: 15%;
+}
+.header .div_logo .header__logo {
+  color: #FFF;
+  font-family: Neue Machina;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header .div_logo .logo_img {
+  vertical-align: text-bottom;
+}
+.header .header-nav {
+  padding-right: 25%;
+  position: relative;
+}
+.header .header-nav .header-menu {
+  display: flex;
+  gap: 7vw;
+}
+.header .header-nav .header-menu .nav__item {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header .header-nav .header-menu .nav__item .alink {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.text-block {
+  position: relative;
+}
+.text-block .text-div {
+  padding-left: 7vw;
+}
+.text-block .text-div .title-text {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+.text-block .text-div .text-div12 {
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: #008f75;
+  display: flex;
+  padding: 15px 0;
+  gap: 0.7vw;
+  margin-top: 35px;
+  width: 13.3vw;
+}
+.text-block .text-div .text-div12 .button_support {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.523%;
+  background: border-box;
+}
+.text-block .text-div .text-div12 .arrow {
+  width: 1vw;
+  height: 2.4vh;
+}
+
+.likeit {
+  padding: 150px 0px 80px;
+  position: relative;
+}
+.likeit .likemyit {
+  display: flex;
+  justify-content: space-evenly;
+}
+.likeit .likemyit .postof {
+  display: flex;
+  width: 21vw;
+  max-height: 100px;
+  padding: 1vw 1vh;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 1px solid var(--stroke, rgba(30, 207, 122, 0.35));
+  background: linear-gradient(201deg, rgba(28, 255, 146, 0.1) -5.46%, rgba(28, 184, 109, 0) 96.22%);
+}
+.likeit .likemyit .postof .text-post {
+  color: var(--green, #1ECF7A);
+  font-family: Steppe;
+  font-size: 1.4vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: border-box;
+}
+.likeit .likemyit .postof .text-post__post {
+  text-align: center;
+  max-width: 81%;
+}
+
+.product-div {
+  padding-bottom: 3vw;
+  position: relative;
+}
+.product-div .product-block {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.product-div .product-block .product {
+  display: flex;
+  flex-direction: column;
+  border-radius: 60px;
+  border: 1px solid var(--stroke, rgba(30, 207, 122, 0.35));
+  background: linear-gradient(245deg, rgba(0, 255, 102, 0.1) -2.24%, rgba(0, 147, 59, 0) 96.75%);
+  width: 21vw;
+  height: 545px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.product-div .product-block .product .prod {
+  width: 17vw;
+  height: 17vw;
+  flex-shrink: 0;
+  background: border-box;
+}
+.product-div .product-block .product .prod-name {
+  color: #FFF;
+  text-align: center;
+  font-family: Steppe;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: border-box;
+  max-width: 80%;
+  height: 12vh;
+}
+.product-div .product-block .product .price-prod {
+  color: var(--green, #1ECF7A);
+  text-align: center;
+  text-shadow: 2px -2px 6px rgba(0, 255, 163, 0.25);
+  font-family: Steppe;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: border-box;
+  height: 6vh;
+}
+.product-div .product-block .product .prod-buy {
+  display: flex;
+  width: 13vw;
+  height: 50px;
+  margin: 0 0 16px 0;
+  padding: 11px 4vw;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--green, #0d9b3c);
+  color: #FFF;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.alink:hover {
+  border-bottom: 1px solid #0b5825;
+  border-radius: 15%;
+}/*# sourceMappingURL=style.css.map */

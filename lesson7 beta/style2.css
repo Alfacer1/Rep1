@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grey-bg {
+    background-color: #efefef;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    padding: 17px 15px;
+}
+
+.menu2{
+    border-top: 1px solid #efefef;
+}
+
+.menu2>.menu-item{
+    padding: 30px 20px;
+}
+
+.menu-item-link{
+    color: #000;
+}
+
+.twoside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    gap: 20px;
+}
+
+.logo-name{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    color: #F13C6E;
+    text-transform: uppercase;
+}
+
+.call{
+    gap: 40px;
+}
+
+.call-link{
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn{
+    border: 2px solid;
+    border-radius: 40px;
+    }    
+
+.call-btn{
+    background-color: #fff;
+    padding: 9px 41px;
+    border-color: #F13C6E;
+}
+
+.img-container{
+    display: block;
+    width: 100%;
+    position: absolute;
+  }
+
+.img-container2{
+    display: block;
+    justify-content: center;
+    padding: 192px 405px;
+    position: relative;
+}
+
+.left{
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 42px;
+}
+
+.center{
+    color: black;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-bottom: 32px;
+}
+
+.buttonmore{
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    background: var(--accent,#F13C6E);
+    color: #FFF;
+    position: absolute;
+  }
+
+  .offers{
+    padding: 65px 0px;
+    padding-bottom: 15px;
+}
+
+.offers > h3{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+    margin-left: 395px;
+}
+
+.goods{
+    gap: 40px;
+    margin: 60px;
+}
+
+
+.goods-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 14px;
+    background-color: #FFF;
+    max-width: 225px;
+}
+
+.item-img{
+    width: 125px;
+}
+
+.item-name{
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.625%; /* 19.688px */
+    width: 80%;
+}
+
+.item-price{
+    color: #000;
+    text-align: center;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.05px;
+}
+
+.item-btn{
+    background-color: #F13C6E;
+    color: #fff;
+    padding: 9px 53px;
+    text-transform: capitalize;
+    border-color: #F13C6E;
+}

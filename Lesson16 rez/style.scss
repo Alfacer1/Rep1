@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap');
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?2hypyb');
+  src:  url('./fonts/icomoon.eot?2hypyb#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?2hypyb') format('truetype'),
+    url('./fonts/icomoon.woff?2hypyb') format('woff'),
+    url('./fonts/icomoon.svg?2hypyb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+$white: #fff;
+$white40: rgba(255, 255, 255, 0.4);
+$grey: #333;
+$dark: #000;
+$dark85: rgba(0, 0, 0, 0.85);
+$dark50: rgba(0, 0, 0, 0.5);
+$green: #1ed400;
+$green40: rgba(30, 212, 0, 0.4);
+$cyan: #027FA5;
+$white-smoke: #D5D8DB;
+
+@mixin Roboto($fs, $fw, $lh){
+  font-family: 'Roboto Slab', serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Lora($fs, $fw, $lh){
+  font-family: 'Lora', serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Lato($fs, $fw, $lh){
+  font-family: 'Lato', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Quicksand($fs, $fw, $lh){
+  font-family: 'Quicksand', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin flex($jc, $ai, $gp){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gp;
+}
+
+@mixin color-text($c,$tt,$ta){
+  color: $c;
+  text-transform: $tt;
+  text-align: $ta;
+}
+
+@mixin size ($w,$h){
+  width: $w;
+  height: $h;
+}
+
+.color-text{
+  color: $white;
+  text-transform: uppercase;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+[class^="icon-"], [class*="icon-"]{
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-vk:before {
+  content: "\e902";
+}
+.icon-youtube:before {
+  content: "\e903";
+}
+
+.nav{
+  @include flex(center, center, 56px);
+  &__item{
+    &-link{
+      @include Lato(22px, 500, 22px);
+    }
+  }
+}
+
+.langBar{
+  @include flex(center, center, 4px);
+}
+
+.social{
+  @include flex(center, center, 32px)
+}
+
+.header{
+  @include flex(space-around, center, 0);
+  background: $dark85;
+  padding: 36px 0;
+  position: sticky;
+  top: 0%;
+  &__logo{
+    @include Roboto(32px, 700, 32px);
+    color: $white;
+  }
+
+.logo{
+  @include Roboto(32px, 700, 32px);
+}
+
+  .nav{
+    &__item{
+      &-link{
+        color: $white;
+      }
+    }
+  }
+
+  .social{
+    &__item{
+      &-link{
+        color: $white;
+      }
+    }
+  }
+}
+
+.footer{
+  @include flex(space-around, center, 0);
+  background: url('../Lesson16/img/imgMountains.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 96px 0;
+  &__logo{
+    @include Roboto(32px, 700, 32px);
+    color: $dark;
+  }
+
+.logo{
+  @include Roboto(32px, 700, 32px);
+}
+
+  .nav{
+    &__item{
+      &-link{
+        color: $dark;
+      }
+    }
+  }
+
+  .social{
+    &__item{
+      &-link{
+        color: $dark;
+      }
+    }
+  }
+}
+
+.btn{
+  background-color: $green;
+  border: none;
+  @extend .color-text;
+  @include Lato(16px, 900, 16px);
+
+  &__ways{
+    color: $white;
+    padding: 19px 62px;
+    margin: 50px 0px 8px;
+    @include Quicksand(20px,700,18px);
+  }
+}
+
+.bg-photo{
+  background: url('../Lesson16/img/bg1.jpg') no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  width: 100%;
+  min-height: 964px;
+  margin-top: -119px;
+  @include flex(center, center, 0);
+  flex-direction: column;
+
+  .airplane{
+    margin-top: 72px;
+    opacity: 0.85;
+  }
+}
+
+.call-to-action{
+  @include flex(center, center, 32px);
+  flex-direction: column;
+  background-color: $dark85;
+  padding: 48px;
+
+  h1{
+    @include color-text($white,uppercase,center);
+    @include Lora(84px, 700, 100px);
+  }
+
+  span{
+    @include Lato(24px, 400, 24px);
+    color: $white;
+  }
+
+  .btn{
+    padding: 21px 110px;
+  }
+}
+
+.about-div{
+  background-color: $white;
+
+  .about-header{
+    display: flex;
+    flex-direction: column;
+
+    .about-title{
+      @include Roboto(56px,700,normal);
+      @include color-text($grey,uppercase,center);
+      padding: 144px 0px 32px;
+    }
+
+    .about-text{
+      @include Quicksand(20px,500,32px);
+      @include color-text($grey,none,center);
+      padding-bottom: 64px;
+    }
+  }
+
+  .about-menu{
+    display: flex;
+    justify-content: space-evenly;
+
+    .about-block{
+      @include flex(normal,center,0);
+      flex-direction: column;
+
+      &__travels{
+        padding: 0px 141px 0px 80px;
+      }
+      &__clients{
+        padding-right: 144px;
+      }
+      &__location{
+        padding-right: 114px;
+      }
+
+      .about-caption{
+        color: $green;
+        text-transform: uppercase;
+        @include Roboto(144px,700,normal);
+        position: relative;
+      }
+
+      .about-image{
+        @include size(144px,144px);
+        flex-shrink: 0;
+        position: absolute;
+        padding-top: 90px;
+      }
+
+      .text-desc{
+        @include Quicksand(40px,400,32px);
+        @include color-text($grey,none,center);
+        margin-top: 70px;
+        padding-bottom: 124px;
+      }
+    }
+  }
+}
+
+.trip-div{
+  background: url('../Lesson16/img/barca.png') no-repeat;
+  background-size: cover;
+
+  .trip-block{
+    @include flex(normal,center,0);
+    flex-direction: column;
+
+    .trip-title{
+      @extend .color-text;
+      @include Roboto(56px,700,normal);
+      margin: 56px 0px 16px 0px;
+    }
+
+    .barcelona-text{
+      @extend .color-text;
+      @include Roboto(144px,700,144px);
+    }
+
+    .trep-data{
+      @extend .color-text;
+      @include Quicksand(24px,500,18px);
+      margin: 16px 0px 32px 0px;
+    }
+
+    .trip-text{
+      @include color-text($white,none,center);
+      @include Quicksand(24px,400,32px);
+    }
+
+    .trip-line{
+      border: 1px solid;
+      width: 300px;
+      color: $white;
+      margin: 16px 0px 40px 0px;
+    }
+
+    .trip-sales{
+      @include color-text($white,uppercase,center);
+      @include Quicksand(28px,500,32px);
+      margin-bottom: 24px;
+    }
+
+    .btn-trip{
+      color: $white;
+      padding: 19px 50px;
+      margin-bottom: 106px;
+      @include Quicksand(20px,700,18px);
+    }
+  }
+}
+
+.ways-div{
+  background: $white;
+
+  .ways-block{
+
+    .ways-title{
+      @include color-text($grey,uppercase,center);
+      @include Roboto(56px,700,normal);
+      margin: 124px 0px 40px;
+    }
+
+    .img-div{
+      @include flex(center,normal,40px);
+
+      .img-block{
+        display: flex;
+
+        .ways-img-text{
+          color: $white;
+          position: absolute;
+          background-color: black;
+          margin-top: 10px;
+          padding: 5px 8px;
+          @include Roboto(18px,400,18px);
+        }
+      }
+    }
+
+    .stories-div{
+      @include flex(normal,center,0);
+      flex-direction: column;
+      margin-bottom: 72px;
+
+      .instagram-text{
+        @include color-text(grey,none,center);
+        @include Quicksand(14px,500,18px);
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.travel-div{
+  height: 560px;
+  background: $green40 no-repeat;
+
+  .bg-img{
+    position: absolute;
+    mix-blend-mode: multiply;
+    opacity: 0.85;
+    @include size(1903px,560px);
+  }
+
+  .travel-title{
+    @include color-text($white, uppercase, center);
+    @include Roboto(56px,700,normal);
+    padding: 48px 0px 32px;
+    opacity: 1.0;
+    position: relative;
+  }
+
+  .travel-menu{
+    @include flex(space-around,normal,0);
+
+    .img-section{
+      border: 1px solid $white40;
+      flex-shrink: 0;
+
+      &__thailand{
+        @include size(441px,294px);
+        margin-top: 25px;
+      }
+      &__story{
+        @include size(514px,342px);
+      }
+      &__A-light{
+        @include size(441px,294px);
+        margin-top: 25px;
+      }
+      .picture{
+        position: absolute;
+      }
+      
+      .span-picture{
+        margin: 10px 0px 0px 7px;
+        color: $white;
+        background-color: $dark;
+        padding: 5px 8px;
+        position: absolute;
+        @include Lato(14px,500,normal)
+      }
+
+      .icon{
+        position: relative;
+        &__thailand{
+          margin: 130px 203px;
+        }
+        &__story{
+          margin: 157px 237px;
+        }
+        &__A-light{
+          margin: 130px 203px;
+        }
+      }
+    }
+  }
+}
